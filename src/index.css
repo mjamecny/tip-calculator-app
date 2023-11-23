@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    display: block;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.3s;
+    color: hsl(189, 41%, 97%);
+  }
+
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+  }
+
+  /* On mouse-over, add a background-color: hsl(172, 67%, 70%); background color */
+  .container:hover input ~ .checkmark {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 70%);
+  }
+
+  /* When the radio button is checked, add a hsl(172, 67%, 45%) background */
+  .container input:checked ~ .checkmark {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+  }
+}
