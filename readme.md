@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-with-tailwindcss-icOnoyK2_o)
 - Live Site URL: [Netlify](https://fm-challenge-tip-calculator-app.netlify.app/)
 
 ## My process
